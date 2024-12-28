@@ -16,7 +16,11 @@ class AURO_LEARN_API AAuraEnemy : public AAuraCharacterBase, public IEnemyInterf
 	GENERATED_BODY()
 public:
 	AAuraEnemy();
+
+	/* Enemy Interface */
 	virtual void HighLightActor() override;
 	virtual void UnHighLightActor() override;
-	
+
+protected:
+	virtual void BeginPlay() override;
 };
